@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { fetchPost } from '../utils/services.ts'
+import { fetchPost } from '../services/api.ts'
 import Loader from '../components/Loader.tsx'
 import CommentTree from '../components/CommentTree.tsx'
 import Banner from '../assets/banner.png'
