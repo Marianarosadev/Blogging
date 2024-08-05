@@ -3,6 +3,7 @@
   padding: 0 1rem;
   border-left: 3px solid #FF9B52;
   text-align: start;
+  transition: .8s;
 }
 
 .comment__user {
@@ -11,6 +12,7 @@
 
 .comment__content {
   font-size: 18px;
+  transition: .8s;
 }
 
 .comment-actions {
@@ -31,4 +33,41 @@
 
 .comment__btn-icon:hover {
   opacity: .5;
+}
+
+.comment-reply {
+  margin-top: 1rem;
+}
+
+.comment-reply__textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  resize: vertical;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.comment-reply__textarea:focus {
+  border-color: #03A9F4;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 5px rgba(3, 169, 244, 0.2);
+}
+
+.comment-reply__textarea::placeholder {
+  color: #a9a9a9;
+}
+
+.comment-reply__submit {
+  margin-right: .5rem;
+}
+
+@media (max-width: 768px) {
+  .comment-reply__submit {
+    margin-bottom: .5rem;
+  }
 }
