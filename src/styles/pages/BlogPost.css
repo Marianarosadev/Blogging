@@ -39,5 +39,10 @@
 
 .post__content {
   font-size: 20px;
-  line-height: 40px;
+}
+
+.post__comments-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 2rem 0 1.5rem;
 }

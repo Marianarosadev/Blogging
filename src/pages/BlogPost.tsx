@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { fetchPost } from '../utils/services.ts'
 import Loader from '../components/Loader.tsx'
+import CommentTree from '../components/CommentTree.tsx'
 import Banner from '../assets/banner.png'
 import Avatar1 from '../assets/avatars/avatar1.jpg'
 import '../styles/pages/BlogPost.css'
@@ -47,6 +48,10 @@ const BlogPost: React.FC = () => {
           </div>
         </div>
         <div className="post__content" dangerouslySetInnerHTML={{ __html: post.content }}/>
+        <div className="post__comments">
+          <div className="post__comments-title">Comentários</div>
+          <CommentTree comments={post.comments} />
+        </div>
       </div>
     </div>
   );
