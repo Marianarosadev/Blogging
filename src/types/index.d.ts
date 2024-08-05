@@ -1,9 +1,9 @@
-interface Post {
+interface rawPost {
   id: number;
   timestamp: string;
-  author: {
+  author: { 
     id: number;
-    username: string;
+    username: string; 
   };
   title: string;
   subtitle: string;

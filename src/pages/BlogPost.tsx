@@ -6,7 +6,7 @@ import Avatar1 from '../assets/avatars/avatar1.jpg'
 import '../styles/pages/BlogPost.css'
 
 const BlogPost: React.FC = () => {
-  const [post, setPost] = useState<Post | null>(null);
+  const [post, setPost] = useState<rawPost | null>(null);
 
   useEffect(() => {
     const loadPost = async () => {

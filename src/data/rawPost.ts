@@ -1,4 +1,4 @@
-export const rawPost = {
+export const rawPost: rawPost = {
   id: 1,
   timestamp: '2019-02-20T13:22Z',
   author: {
