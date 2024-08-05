@@ -28,6 +28,10 @@
   margin-right: 1rem;
 }
 
+.post__author-info {
+  line-height: 1.5rem;
+}
+
 .post__author-name {
   font-size: 12px;
 }

@@ -33,7 +33,7 @@ const BlogPost: React.FC = () => {
         <h2 className='post__sub-title'>{post.subtitle}</h2>
         <div className='post__author'>
           <img src={Avatar1} alt="Foto do autor do post" className='post__avatar-img'/>
-          <div>
+          <div className='post__author-info'>
             <div className='post__author-name'>{post.author.username}</div>
             <div className='post__timestamp'>{formatDate(post.timestamp)}</div>
           </div>

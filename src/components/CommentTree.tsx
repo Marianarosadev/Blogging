@@ -62,7 +62,7 @@ const CommentTree: React.FC<CommentTreeProps> = ({ comments }) => {
           <div className='comment__content'>{comment.content}</div>
           {replyTo !== comment.id && (
             <div className="comment-actions">
-              <button className='comment__btn-icon' onClick={() => handleReplyClick(comment.id)}>
+              <button data-testid={`reply-button-${comment.id}`} className='comment__btn-icon' onClick={() => handleReplyClick(comment.id)}>
                 <img src={IconComment} alt="Responder" />
               </button>
               <button className='comment__btn-icon'>
