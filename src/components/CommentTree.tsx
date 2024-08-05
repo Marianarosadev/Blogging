@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatDateTime } from '../utils/formaters.ts'
 import IconComment from '../assets/icons/comment.svg'
 import IconReport from '../assets/icons/report.svg'
 import IconSend from '../assets/icons/send.svg'
@@ -25,7 +26,7 @@ const CommentTree: React.FC<CommentTreeProps> = ({ comments }) => {
       .filter(comment => (comment.respondsTo ? comment.respondsTo.id : null) === parentId)
       .map(comment => (
         <div key={comment.id} className="comment">
-          <a className='comment__user'>{comment.author.username} - {comment.timestamp}</a>
+          <a className='comment__user'>{comment.author.username} - {formatDateTime(comment.timestamp)}</a>
           <div className='comment__content'>{comment.content}</div>
           <div className="comment-actions">
             <button className='comment__btn-icon'>

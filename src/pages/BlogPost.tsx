@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { fetchPost } from '../services/api.ts'
+import { formatDate } from '../utils/formaters.ts'
 import Loader from '../components/Loader.tsx'
 import CommentTree from '../components/CommentTree.tsx'
 import Banner from '../assets/banner.png'
@@ -21,16 +22,6 @@ const BlogPost: React.FC = () => {
     };
     loadPost();
   }, []);
-
-  const formatDate = (timestamp: string) => {
-    const date = new Date(timestamp);
-    const options: Intl.DateTimeFormatOptions = {
-      day: '2-digit',
-      month: 'short',
-      year: 'numeric',
-    };
-    return date.toLocaleDateString('pt-BR', options).replace(' de ', ', ');
-  };
 
   if (!post) return <Loader/>;
 
