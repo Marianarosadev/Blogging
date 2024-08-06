@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# React Blogging
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Blogging** é uma aplicação de blog desenvolvida com [React](https://reactjs.org/), [Vite](https://vitejs.dev/) e [TypeScript](https://www.typescriptlang.org/). A plataforma permite que os usuários visualizem posts, interajam através de comentários e acessem informações detalhadas sobre outros usuários.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Visualização de Posts**: Os usuários podem visualizar posts que incluem título, subtítulo, data de publicação, informações sobre o autor e conteúdo completo.
+- **Comentários**: Os posts suportam comentários, permitindo que os usuários respondam aos posts e interajam entre si. Comentários podem ser respondidos, criando uma discussão encadeada.
+- **Detalhes do Usuário**: Ao clicar no nome de um usuário que comentou, um modal é exibido com informações detalhadas sobre o usuário, como foto, data de filiação, amigos em comum e detalhes de seus posts.
 
-## Expanding the ESLint configuration
+## 💻 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**
+- **Vite**
+- **TypeScript**
+- **HTML**
+- **CSS**
+- **Jest**
 
-- Configure the top-level `parserOptions` property like this:
+## 📋 Executando o Projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Certifique-se de ter o **Node.js** instalado.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone o repositório: 
+   ```sh
+   git clone https://github.com/Marianarosadev/blogging.git
+   
+2. Instale as dependências: 
+   ```sh
+   npm install
+
+3. Inicie o servidor de desenvolvimento: 
+   ```sh
+   npm run dev
+
+ Após iniciar o servidor, será possível visualizar a tela de posts e os comentários.
+
+## ⚙️ Executando os testes
+
+Para executar os testes, utilize o comando:
+
+  ```sh
+  npm test
