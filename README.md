@@ -8,6 +8,11 @@
 - **Comentários**: Os posts suportam comentários, permitindo que os usuários respondam aos posts e interajam entre si. Comentários podem ser respondidos, criando uma discussão encadeada.
 - **Detalhes do Usuário**: Ao clicar no nome de um usuário que comentou, um modal é exibido com informações detalhadas sobre o usuário, como foto, data de filiação, amigos em comum e detalhes de seus posts.
 
+<div style="width:100%; margin-top: 16px; display: flex; align-items:start; justify-content:center">
+  <img src="./src/assets/Screenshots/tela-post.png" alt="Screenshot da aplicação" width="300" heigth="500" style="margin-right: 16px;"/>
+  <img src="./src/assets/Screenshots/modal-user.jpeg" alt="Screenshot da aplicação" width="300" heigth="500"/>
+</div>
+
 ## 💻 Tecnologias Utilizadas
 
 - **React**
