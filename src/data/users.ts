@@ -1,9 +1,9 @@
-export const users = [
+export const users: User[] = [
   {
     id: 1,
     username: "João Figueiredo",
     memberSince: "2014-05-03T16:12Z",
-    friendIds: [2, 4],
+    friendIds: [2, 4, 6],
     posts: [{
       id: 1,
       title: "Título de um post criado por um usuário deste blog",

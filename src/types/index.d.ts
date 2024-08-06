@@ -19,3 +19,16 @@ interface rawPost {
     content: string;
   }>;
 }
+
+interface User {
+  id: number;
+  username: string;
+  memberSince: string;
+  friendIds: number[];
+  posts: {
+    id: number;
+    title: string;
+    subtitle: string;
+    content: string;
+  }[];
+}
